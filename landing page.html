@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
+
+<style>
+
+/* font family style for card-title*/
+h1 {
+  font-family: "Bungee Outline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color:white
+}
+
+
+
+/* Header with background image */
+header {
+    position: relative;
+    height: 100vh;
+    background-image: url("vinyl background.png");
+    background-size: 1200px;
+    overflow: hidden;
+}
+ 
+/* Auth Forms Section Styling */
+.auth-section {
+    background-color: #fff; 
+    padding: 50px 0;
+}
+
+.auth-form {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.auth-form h4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.auth-form .form-group {
+    margin-bottom: 15px;
+}
+
+.auth-form .btn {
+    width: 100%;
+}
+
+.auth-form a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.auth-form a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar styles */
+.bg-dark-custom {
+    background-color: #212121 !important; /* dark background */
+}
+
+/* Navbar text color */
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ddd; /* Slightly lighter color on hover */
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+/* Footer custom styles */
+footer {
+    background-color: #333;
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">OG-FlacAudio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Albums</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Flac-CDs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <!-- Search Form -->
+                <form class="form-inline ml-3">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search for products</button>
+                </form>
+
+                <!--sign in / login button-->
+                <a href="C:\Users\welcome\Documents\javascript files\core\logincdshop.html" class="btn btn-outline-light ml-3">SIGN IN/LOGIN</a>
+
+                
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section with Background Image -->
+    <header class="header">
+        
+<div class="container">
+    <div class="card-shadow p-4">
+       
+        <div class="row">
+    
+            <div class="col-8">
+                <h1 class="card-title"><b>FIND MUSIC</b></h1>
+                <h1 class="card-title"><b>THAT MATCHES</b></h1>                        
+                <h1 class="card-title"><b>YOUR GENRE</b></h1>            
+                           
+                <p class="card-text">Browse through our diverse range of meticulously crafted vinyls to bring out </p>
+                <p class="card-text">your individuality and cater to your sense of style</p>
+                
+                <br>
+                <button type="button" class="btn btn-outline-dark btn-light"><b>Shop Now</b></button>
+            <br>
+            <br>
+            <br>
+            
+            <div class="row">
+                <div class="col-2">
+                    <h3 class="card-title">200+</h3>
+                    <p class="card-text">International Brands</p>
+                </div>
+                <div class="col-2">
+                    <h3 class="card-title">2000+</h3>
+                    <p class="card-text">Quality Products</p>
+                </div>
+                <div class="col-2">
+                    <h3 class="card-title">10000+</h3>
+                    <p class="card-text">Genuine Feedback</p>
+                </div>
+                <div class="col-2">
+                    <h3 class="card-title">30000+</h3>
+                    <p class="card-text">Happy Customers</p>
+                </div>
+            </div>
+            </div>
+
+            <div class="col-4">
+                <img class="w-100" src=" ">
+            </div>
+
+        
+       </div> 
+    </div>
+</div>
+    </header>
+    <br>
+    <!-- about the overall quality of products -->
+    <h2 class=" display-1 mb-4 text-center">Our Promises</h2>
+    <br>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="ldac-tab" data-toggle="tab" href="#ldac" role="tab" aria-controls="ldac" aria-selected="true">LDAC</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="hires-tab" data-toggle="tab" href="#hires" role="tab" aria-controls="hires" aria-selected="false">HI-RES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="rhythm-tab" data-toggle="tab" href="#rhythm" role="tab" aria-controls="rhythm" aria-selected="false">Rhythm-Driven</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="durable-tab" data-toggle="tab" href="#durable" role="tab" aria-controls="durable" aria-selected="true">Highly Durable</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="playback-tab" data-toggle="tab" href="#playback" role="tab" aria-controls="playback" aria-selected="false">Playback time</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="waterproofed-tab" data-toggle="tab" href="#waterproofed" role="tab" aria-controls="waterproofed" aria-selected="false">WaterProofed</a>
+          </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="ldac" role="tabpanel" aria-labelledby="ldac-tab">LDAC Ultra-Clear Audio Transmission Reproduce every drumbeat with subtle and rich details
+            <img src="https://www.discmakers.com/images/products/disc-packages/vinyl/vinyl-euro.png" class="center">
+            <h2>Capture Every Drumbeat with Rich Details</h2>
+            <h4>LDAC Ultra-Clear Analog Transmission</h4>
+             <p>Featuring LDAC audio coding technology and an embedded professional audio chip, Retro Vinyl are able to deliver three times more data than those other typical Bluetooth® coding technologies, with audio transmission speeds of up to 990kbps. Listen to your favorite soundtrack and enjoy every subtle nuance.</p>
+        </div>
+        <div class="tab-pane fade" id="hires" role="tabpanel" aria-labelledby="hires-tab">Certified Hi-Res Wireless AudioEnjoy your music clearly and vividly
+            <img src="https://archive.org/download/hi-res-stereo/%D0%9E%D0%9A.jpg" class="center">
+            <h2>Absolute audio purity</h2>
+             <p>High-Resolution Audio tracks are far higher quality than MP3s and even CDs, letting you hear every breath, every drumbeat, every note. And now you can enjoy the High-Resolution Audio experience through your Sony TV.</p>
+
+        </div>
+        
+        <div class="tab-pane fade" id="rhythm" role="tabpanel" aria-labelledby="rhythm-tab">Vinyl Pressing records the beat and immerse yourself in the music
+            <img src="https://assorted.downloads.oppo.com/static/archives/images/in/m31/enco-tech.jpg" class="center">
+            <h2>Custom Vinyl Records & Short Run Vinyl Pressing</h2>
+            <p>Record sales are at record highs, so there's no better time to delight your fans with your music in vinyl format. As one of the originators of the DIY artist revolution, Disc Makers started pressing records in 1946, so we know a thing or two about how to make a great record. And while most vinyl pressing plants prefer to work with a record label, we've built every one of our vinyl packages for working independent artists.</p>
+
+        </div>
+        <div class="tab-pane fade" id="durable" role="tabpanel" aria-labelledby="durable-tab">MG-coated resistance proofing during CallsLet your tunes be heard
+            <img src="https://cdn-5f7e6584c1ac190fbc5797e3.closte.com/wp-content/uploads/2018/11/D26A2a-1024x640.jpg" class="center">
+            <h2>Basic 12" Records in Euro Jackets</h2>
+            <p>100 Black vinyl recordsBasic 12" Records in Euro Jackets100 vinyl records for $999
+                This is our most-affordable vinyl option at a price point that's accessible for emerging artists. You'll receive a professional-quality product in an efficient timeframe.
+                
+                <p>Standard 140 gram black vinyl record pressing (optional random color available)</p>
+                <p>Euro jacket printing with medium-gloss aqueous finish</p>
+                <p>Full-color printed LP labels</p>
+                <p>Plain white inner sleeves</p>
+                <p>Insertion and shrink-wrap</p>
+                <p>Test pressings are available as an additional add-on</p>
+                <p>Ready in as fast as 6 weeks</p>
+        </div>
+        <div class="tab-pane fade" id="playback" role="tabpanel" aria-labelledby="playback-tab">Up to 12-Hour Playback Listen to your soundtrack at a stretch without damaging the vinyl for the long run
+            <img src="https://www.soundguys.com/wp-content/uploads/2019/02/riaa-sales-figures-mp3-era-1.jpg" class="center">
+            <h2>High Resolution Digital Versus Analog Vinyl - Technical Superiority Meets Experiential Optimization</h2>
+            <p>Every vinyl enthusiast will tell you that there is a “ritual” to playing an LP. You must first find it, then remove the record itself from its cover, clean it (maybe), place it on the turntable, lower the tonearm, return to your listening seat, and begin listening. This usually takes quite a bit longer than choosing a selection from your smartphone’s playlist. And that is important. Why? Because during that time you are preparing yourself to listen to music. </p>
+        </div>
+        <div class="tab-pane fade" id="waterproofed" role="tabpanel" aria-labelledby="waterproofed-tab">IPX5 Water ResistanceStay protected from splashing water and sweat with special coating on the Hi-Res discs for Extra Durability
+            <img src="https://recordhead.biz/wp-content/uploads/2022/03/01-Analog-warmth.jpg" class="center">
+            <h2>The “Coating-Ritual” of vinyl</h2>
+                <p>Every vinyl enthusiast will tell you that there is a “ritual” to playing an LP. You must first find it, then remove the record itself from its cover, clean it (maybe), place it on the turntable, lower the tonearm, return to your listening seat, and begin listening. This usually takes quite a bit longer than choosing a selection from your smartphone’s playlist. And that is important. Why? Because during that time you are preparing yourself to listen to music. </p>
+        </div>
+      </div>
+
+    <br>
+    
+    <!-- Content Section -->
+    <section id="shop" class="container py-5">
+        <h2 class="text-center mb-4">Featured Products</h2>
+        <br>
+    <!--pagination for page 1 of products(top)-->
+        
+  <nav aria-label="...">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1">Previous</a>
+      </li>
+      
+      <li class="page-item active">
+        <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="page-item"><a class="page-link" href="C:\Users\welcome\Documents\javascript files\core\productspageno2.html">2</a></li>
+
+      <li class="page-item"><a class="page-link" href="C:\Users\welcome\Documents\javascript files\core\productspageno3.html">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="C:\Users\welcome\Documents\javascript files\core\productspageno2.html">Next</a>
+      </li>
+    </ul>
+  </nav>
+
+        <br>
+
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://www.designformusic.com/wp-content/uploads/2016/05/continuum-trailer-music-album-cover-design-500x500.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Continuum Album</h5>
+                        <p class="card-text">490.99 Rupees only</p>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\contibuy.html" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Add to Cart</a>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\contibuy.html" class="btn btn-dark">Buy Now</a>
+
+                      </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://audition.justisntmusic.com/images/albums/NTPM481_AlbumArt.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Ninja Tune's ocean blues Album</h5>
+                        <p class="card-text">799.99 Rupees only</p>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\ninjabuy.html" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Add to Cart</a>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\ninjabuy.html" class="btn btn-dark">Buy Now</a>
+
+                      </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://ballysagoomusic.com/wp-content/uploads/1996/01/Bally-Sagoo_Cover-Art_Rising-From-The-East_0500px.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Rising From The East collection</h5>
+                        <p class="card-text">299.99 Rupees only</p>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\eastbuy.html" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Add to Cart</a>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\eastbuy.html" class="btn btn-dark">Buy Now</a>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <!--row2-->
+        <div class="row">
+            <!-- Product 4 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/0441c1c5-1d8c-4795-bd2b-09d00f49ab64/day4crn-500cb08a-3e2a-49d9-93c7-23a2f534ebba.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzA0NDFjMWM1LTFkOGMtNDc5NS1iZDJiLTA5ZDAwZjQ5YWI2NFwvZGF5NGNybi01MDBjYjA4YS0zZTJhLTQ5ZDktOTNjNy0yM2EyZjUzNGViYmEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.EqdBDCHlgUGyMye2pNXiLiTuOUIPWxaev6NuBd2kpy0" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Igor Album</h5>
+                        <p class="card-text">690.99 Rupees only</p>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\prod4.html" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Add to Cart</a>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\prod4.html">Buy Now</a>
+                      </div>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://www.udiscovermusic.com/wp-content/uploads/2020/09/Cream-Disraeli-Gears-.jpg" class="card-img-top" alt="Product 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Tyler the Creator Album</h5>
+                        <p class="card-text">456.99 Rupees only</p>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\prod5.html" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Add to Cart</a>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\prod5.html" class="btn btn-dark">Buy Now</a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://wpimg.pixelied.com/blog/wp-content/uploads/2021/05/12051643/Over-This-by-Tim-Schaufert.jpg" class="card-img-top" alt="Product 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Feat.Yosie collection</h5>
+                        <p class="card-text">989.99 Rupees only</p>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\prod6.html" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Add to Cart</a>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\prod6.html" class="btn btn-dark">Buy Now</a>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <!--row3-->
+        <div class="row">
+            <!-- Product 7 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://buycoverartwork.com/wp-content/uploads/2022/06/cover-art-for-music-the-return-of-the-diva-500x500.jpg.webp" class="card-img-top" alt="Product 7">
+                    <div class="card-body">
+                        <h5 class="card-title">The Return Of The Zeus Album</h5>
+                        <p class="card-text">990.99 Rupees only</p>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\prod7.html" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Add to Cart</a>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\prod7.html" class="btn btn-dark">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 8 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://i.gyazo.com/3625588b3d67a0e0f52fd6a080657cd1.png" class="card-img-top" alt="Product 8">
+                    <div class="card-body">
+                        <h5 class="card-title">Fugazzi's 13 songs</h5>
+                        <p class="card-text">799.99 Rupees only</p>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\prod8.html" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Add to Cart</a>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\prod8.html" class="btn btn-dark">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 9 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMy9hbEZeFg48z50I0aJuMc7jlJMXN1ix1KQ&s" class="card-img-top" alt="Product 9">
+                    <div class="card-body">
+                        <h5 class="card-title">Rising From The Dead collection</h5>
+                        <p class="card-text">399.99 Rupees only</p>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\prod9.html" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Add to Cart</a>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\prod9.html" class="btn btn-dark">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<br>
+
+<!-- Button trigger modal -->
+  <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    Launch demo modal
+  </button>-->  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Add to Cart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Are you sure? Do you want to add this Item to the Cart?</p>
+
+          <label for="region check">check to see if item available in your region</label>
+                        <select class="form-select w-50">
+                            <option>Tamilnadu</option>
+                            <option>Maharastra</option>
+                            <option>Karnataka</option>
+                            <option>Jammu and kashmir</option>
+                            <option>Rajasthan</option>
+                            <option>Madhya Pradesh</option>
+                            <option>Uttar Pradesh</option>
+                            <option>Gujarat</option>
+                            <option>Andhra Pradesh</option>
+                            <option>Odisha</option>
+                            <option>Chattisgarh</option>
+                            <option>Punjab</option>
+                            <option>Orissa</option>
+                        
+                        </select>
+        </div> 
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--pagination for page 1 of products-->
+        
+  <nav aria-label="...">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled">
+        <a class="page-link" href="#" tabindex="-1">Previous</a>
+      </li>
+      
+      <li class="page-item active">
+        <a class="page-link" href="#">1 <span class="sr-only">(current)</span></a>
+      </li>
+
+      <li class="page-item"><a class="page-link" href="C:\Users\welcome\Documents\javascript files\core\productspageno2.html">2</a></li>
+
+      <li class="page-item"><a class="page-link" href="C:\Users\welcome\Documents\javascript files\core\productspageno3.html">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="C:\Users\welcome\Documents\javascript files\core\productspageno2.html">Next</a>
+      </li>
+    </ul>
+  </nav>
+<br>
+
+  <!--FAQ-->
+  <p class=" display-4 mb-4 text-center">Frequently Asked Questions</h2>
+    <p class=" text-center">Have a Doubt? CheckOut our frequently asked questions</p>
+
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Are these Flac discs legit Re-stored?
+          </button>
+        </h5>
+      </div>
+  
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+            Yes!!! , They are. Get them soon before its sold out
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Is there a place for free trial or demo in New delhi?
+          </button>
+        </h5>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+        <div class="card-body">
+            Yes, we have our branches in all the states of India, Come and visit us for a free demo.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            How many days to wait till i get my order?
+          </button>
+        </h5>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="card-body">
+            you will receive your order within 1 or 2 weeks after you ordered.  
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 OG-FlacAudio. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+</body>
+
+</html>
+
+
+
