@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Website</title>
+
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--font family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
+
+<style>
+
+/* font family style for card-title*/
+h1 {
+  font-family: "Bungee Outline", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
+  color:white
+}
+
+
+
+/* Header with background image */
+header {
+    position: relative;
+    height: 100vh;
+    background-image: url("vinyl background.png");
+    background-size: 1200px;
+    overflow: hidden;
+}
+ 
+
+/* Navbar styles */
+.bg-dark-custom {
+    background-color: #212121 !important; /* dark background */
+}
+
+/* Navbar text color */
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ddd; /* Slightly lighter color on hover */
+}
+
+/* Footer custom styles */
+footer {
+    background-color: #333;
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#">OG-FlacAudio</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Albums</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Flac-CDs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <!-- Search Form -->
+                <form class="form-inline ml-3">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search for products</button>
+                </form>
+
+                <!--sign in / login button-->
+                <a href="C:\Users\welcome\Documents\javascript files\core\logincdshop.html" class="btn btn-outline-light ml-3">SIGN IN/LOGIN</a>
+
+                
+            </div>
+        </div>
+    </nav>
+
+   
+
+    <!-- Content Section -->
+    <section id="shop" class="container py-5">
+        <h2 class="text-center mb-4">Page 3</h2>
+        <br>
+        <!--pagination for page 3(top)-->
+  <nav aria-label="...">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="C:\Users\welcome\Documents\javascript files\core\productspageno2.html" tabindex="-1">Previous</a>
+      </li>
+      
+      <li class="page-item"><a class="page-link" href="C:\Users\welcome\Documents\javascript files\core\landing page.html">1</a></li>
+
+      <li class="page-item"><a class="page-link" href="C:\Users\welcome\Documents\javascript files\core\productspageno2.html">2</a></li>
+
+      <li class="page-item active">
+        <a class="page-link" href="#">3 <span class="sr-only">(current)</span></a>
+      </li>
+      
+      <li class="page-item disabled">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+            <br>
+    
+        <!--row1-->
+        <div class="row">
+            <!-- Product 19 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://design-assets.adobeprojectm.com/content/download/express/public/urn:aaid:sc:VA6C2:9a6b4636-724a-4b9c-ba64-f73d21a8ae9c/component?assetType=TEMPLATE&etag=afb716ad3450729105abaa44c4c8a81f&revision=0&component_id=9282a0c0-3781-4582-8c91-63f2560a94df" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Kraken Album</h5>
+                        <p class="card-text">490.99 Rupees only</p>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\contibuy.html" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Add to Cart</a>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\contibuy.html" class="btn btn-dark" ">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 20 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://drewsreview.wordpress.com/wp-content/uploads/2022/01/rush-counterparts-album-cover.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title"> Devilscard Album</h5>
+                        <p class="card-text">799.99 Rupees only</p>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\ninjabuy.html" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Add to Cart</a>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\ninjabuy.html" class="btn btn-dark">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 21 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5a54e7b0bff200a7a2fac1b5/1515713546084-81MGPODVXVAYKDTIM2AP/bill-dixon_intents-and-purposes-reissue-cd-cover-500px.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">BillDixon's-orchestra</h5>
+                        <p class="card-text">299.99 Rupees only</p>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\eastbuy.html" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Add to Cart</a>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\eastbuy.html" class="btn btn-dark">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--row2-->
+        <div class="row">
+            <!-- Product 22 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyYgxSwC1YlQnCkYfX87o16qnyLVIsEHHQxg&s" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">White horse Album</h5>
+                        <p class="card-text">490.99 Rupees only</p>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\contibuy.html" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Add to Cart</a>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\contibuy.html" class="btn btn-dark">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 23 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://www.udiscovermusic.com/wp-content/uploads/2015/10/Bruce-Springsteen-Born-to-Run.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Bruce-Born-to-Run Album</h5>
+                        <p class="card-text">799.99 Rupees only</p>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\ninjabuy.html" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Add to Cart</a>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\ninjabuy.html" class="btn btn-dark">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 24 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://www.rapreviews.com/wp-content/uploads/2015/02/newbreed-stopthemusic-500x500.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Stop the music collection</h5>
+                        <p class="card-text">299.99 Rupees only</p>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\eastbuy.html" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Add to Cart</a>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\eastbuy.html" class="btn btn-dark">Buy now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--row3-->
+        <div class="row">
+            <!-- Product 25 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://lastfm.freetls.fastly.net/i/u/500x500/e2d2d297d7668502ef505b35222a7904.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Blue Dragon Album</h5>
+                        <p class="card-text">490.99 Rupees only</p>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\contibuy.html" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Add to Cart</a>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\contibuy.html" class="btn btn-dark">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 26 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://64.media.tumblr.com/2ce5756ff63baea113c1a59f4c44989b/tumblr_inline_p1qikfoalO1so4qll_500.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Borrachosriffography Album</h5>
+                        <p class="card-text">799.99 Rupees only</p>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\ninjabuy.html" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Add to Cart</a>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\ninjabuy.html" class="btn btn-dark">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 27 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="https://www.rpmrecords.dk/blog/wp-content/uploads/2021/10/sticker01.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title">RPM records</h5>
+                        <p class="card-text">299.99 Rupees only</p>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\eastbuy.html" class="btn btn-dark" data-toggle="modal" data-target="#exampleModalCenter">Add to Cart</a>
+                        <a href="C:\Users\welcome\Documents\javascript files\core\eastbuy.html" class="btn btn-dark">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<br>
+
+<!-- Button trigger modal -->
+  <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    Launch demo modal
+  </button>-->  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Add to Cart</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <p>Are you sure? Do you want to add this Item to the Cart?</p>
+
+          <label for="region check">check to see if item available in your region</label>
+                        <select class="form-select w-50">
+                            <option>Tamilnadu</option>
+                            <option>Maharastra</option>
+                            <option>Karnataka</option>
+                            <option>Jammu and kashmir</option>
+                            <option>Rajasthan</option>
+                            <option>Madhya Pradesh</option>
+                            <option>Uttar Pradesh</option>
+                            <option>Gujarat</option>
+                            <option>Andhra Pradesh</option>
+                            <option>Odisha</option>
+                            <option>Chattisgarh</option>
+                            <option>Punjab</option>
+                            <option>Orissa</option>
+                        
+                        </select>
+        </div> 
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--pagination for page 3-->
+  <nav aria-label="...">
+    <ul class="pagination justify-content-center">
+      <li class="page-item">
+        <a class="page-link" href="C:\Users\welcome\Documents\javascript files\core\productspageno2.html" tabindex="-1">Previous</a>
+      </li>
+      
+      <li class="page-item"><a class="page-link" href="C:\Users\welcome\Documents\javascript files\core\landing page.html">1</a></li>
+
+      <li class="page-item"><a class="page-link" href="C:\Users\welcome\Documents\javascript files\core\productspageno2.html">2</a></li>
+
+      <li class="page-item active">
+        <a class="page-link" href="#">3 <span class="sr-only">(current)</span></a>
+      </li>
+      
+      <li class="page-item disabled">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 OG-FlacAudio. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    
+</body>
+
+</html>
+
+
+
